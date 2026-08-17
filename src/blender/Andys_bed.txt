@@ -1,0 +1,46 @@
+Ágykeret (Andy szobájából – Toy Story)
+
+Kiindulás: Cube Mesh
+Cube hozzáadása → Scale az ágy méretének beállítása
+A keret oldalsó részeihez: két másolat készítése és pozicionálás
+Elülső és hátsó részekhez: további három másolat + Scale módosítás
+
+Ágyláb felső része (díszes gömb)
+
+Kiindulás: UV Sphere (32 segment, 16 ring)
+Scale X és Y irányban, hogy ovális formát kapjon
+Edit Mode → Vertex select → felső rész Scale
+Apply Scale
+További UV Sphere rácsos támla elemeihez
+
+Ágyláb középső része
+Kiindulás: Cube Mesh
+Scale arányosan
+Loop Cut a középső szegmens kiemelésére
+Bevel a szélek lekerekítésére
+
+Ágyláb alsó része
+
+Kiindulás: Cube Mesh
+Scale a megfelelő magasságra
+Face select → alsó rész Scale (Y) a forma elvékonyítására
+
+Támla (íves felső résszel)
+
+Kiindulás: Cube Mesh + Bézier Curve
+Bézier görbe létrehozása → Bevel Depth beállítása
+Görbe → Convert to Mesh
+Támla Cube → Boolean Modifier (Difference) a görbével – az ív kivágásához
+Bevel Resolution növelése a simább ív érdekében
+
+Elemek egyesítése és egységesítése
+Join (Ctrl + J) → elemek egyesítése
+Mesh → Clean Up → Merge by Distance
+Set Origin → Origin to Geometry + Alt + G (helyzet visszaállítása)
+Apply Scale
+Shade Smooth + Auto Smooth (30°) a végső megjelenéshez
+
+Anyag beállítás
+
+Új Material létrehozása
+Shader Editor → Noise Texture + ColorRamp a fa mintázat imitálásához

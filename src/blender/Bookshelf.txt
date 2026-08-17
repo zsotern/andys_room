@@ -1,0 +1,28 @@
+Könyvespolc (Andy szobájából – Toy Story)
+
+Lábak
+Kiindulás: Cube Mesh
+Cube hozzáadása → Scale a lábak méretének beállítása
++ három másolat és pozicionálás
+
+Lábak tetején gömb dísz
+Kiindulás: UV Sphere
+Scale és pozicionálás
++ három másolat és pozicionálás
+
+Polcok
+Kiindulás: Cube Mesh
+Scale és pozicionálás
++ három másolat és pozicionálás
+
+Vékony "támasztékok"
+Kiindulás: Cylinder Mesh
+Scale és pozicionálás
++ 5 másolat és pozicionálás
+
+Elemek egyesítése és egységesítése
+Join (Ctrl + J) → elemek egyesítése
+Mesh → Clean Up → Merge by Distance
+Set Origin → Origin to Geometry + Alt + G (helyzet visszaállítása)
+Apply Scale
+Shade Smooth + Auto Smooth (30°) a végső megjelenéshez

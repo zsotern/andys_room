@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="hu">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Andy szobája – Three.js </title>
+    <link rel="stylesheet" href="src/styles/style.css">
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+          }
+        }
+    </script>
+</head>
+<body>
+<div id="app">
+<!-- https://chriscourses.com/blog/a-comprehensive-guide-to-materials-in-threejs -->
+    <div id="loading-screen">
+        <div class="loading-text">Loading...</div>
+        <div class="loading-bar-container">
+            <div class="loading-bar" id="loading-bar"></div>
+        </div>
+        <div class="loading-percent" id="loading-percent">0%</div>
+    </div>
+    <div id="mobile-warning" class="hidden">
+        <p>This demo is designed for desktop.</p>
+    </div>
+<!-- Infó bal -->
+    <div id="hud-left" class="hud left overlay" >
+        <div class="hud-title">Készítette</div>
+        <div><strong>Név</strong>: <span id="studentName">Zsóter Nikoletta</span></div>
+        <div><strong>Szak</strong>: <span id="major">Programtervező informatikus BSc</span></div>
+        <div><strong>Tanév</strong>: <span id="year">2025/26 I.</span></div>
+        <div class="muted" style="margin-top:6px">Nyomj <kbd>I</kbd>-t az infók ki/be kapcsolásához</div>
+    </div>
+
+    <!-- Infó jobb -->
+    <div id="hud-right" class="hud right overlay">
+        <div class="hud-title">Billentyűk</div>
+        <div><kbd>I</kbd> Info ki/be</div>
+        <div><kbd>N</kbd> Nappal/Éjszaka</div>
+        <div><kbd>L</kbd> Asztali lámpa ki/be</div>
+        <div><kbd>V</kbd> Villany fel/le</div>
+        <div><kbd>R</kbd> Reset kamera</div>
+        <div>A kisvonat mozgatható a nyilakkal miután rákattintottál</div>
+    </div>
+
+    <div id="toast"></div>
+</div>
+
+<script type="module" src="src/main.js"></script>
+
+</body>
+</html>

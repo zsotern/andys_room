@@ -1,0 +1,32 @@
+Kiságy keret (Andy szobájából – Toy Story)
+
+Kiindulás: Cube Mesh
+Cube hozzáadása → Scale az ágy méretének beállítása
+A keret oldalsó felső részeihez: 5 másolat készítése és pozicionálás
+A keret elülső és hátsó alsó részéhez: 2 másolat + Scale és pozicionálás
+A keret alsó részéhez: 4 másolat + Scale + forgatás + pozicionálás
+
+Ágyláb
+Kiindulás: Cube Mesh
+Scale és pozicionálás
+
+Elülső és hátsó lekerekített "támla" rész 
+Kiindulás: Cube Mesh + Bézier Curve
+Bézier görbe létrehozása → Bevel Depth beállítása
+Görbe → Convert to Mesh
+Támla Cube → Boolean Modifier (Difference) a görbével – az ív kivágásához
+Bevel Resolution növelése a simább ív érdekében
+
+Kiságy rácsos része
+Kiindulás: Cylinder Mesh + UV Sphere
+Scale és pozicionálás
+Join és sokszorozás + pozicionálás
+
+Material módosítása
+
+Elemek egyesítése és egységesítése
+Join (Ctrl + J) → elemek egyesítése
+Mesh → Clean Up → Merge by Distance
+Set Origin → Origin to Geometry + Alt + G (helyzet visszaállítása)
+Apply Scale
+Shade Smooth + Auto Smooth (30°) a végső megjelenéshez

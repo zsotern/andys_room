@@ -1,0 +1,21 @@
+Névtábla (Andy szobájából – Toy Story)
+
+Tábla
+Kiindulás: Plane Mesh
+Scale
+
+Ragasztócsíkok
+Kiindulás: Cube Mesh
+Scale + pozicionálás
++ egy másolat + pozicionálás
+
+Felirat
+Kiindulás: Text
+Scale + pozicionálás + Material
+
+Elemek egyesítése és egységesítése
+Join (Ctrl + J) → elemek egyesítése
+Mesh → Clean Up → Merge by Distance
+Set Origin → Origin to Geometry + Alt + G (helyzet visszaállítása)
+Apply Scale
+Shade Smooth + Auto Smooth (30°) a végső megjelenéshez
