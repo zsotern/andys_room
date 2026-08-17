@@ -2,7 +2,7 @@
 
 An interactive 3D scene running in the browser, depicting a Toy Story–inspired kid's room. Built with Three.js using native ES modules — no build tool or bundler.
 
-**Live demo:** _(Vercel link goes here once deployed)_
+**Live demo:** https://andys-room.vercel.app/
 
 > Note: the on-screen UI (info panel, key hints) is in Hungarian, as this started as a university assignment. The scene itself and all interactions are language-independent.
 
