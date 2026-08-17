@@ -1,5 +1,5 @@
 import * as THREE from "three";
-import {onKey, onKeyUp, trainActive} from "./animation.js";
+import {onKey, onKeyUp, setTrainActive} from "./animation.js";
 import {camera, onResize, renderer, scene} from "./scene.js";
 import {miniTrain} from "./furniture/train.js";
 
@@ -21,13 +21,13 @@ export function setupInteractions(){
         raycaster.setFromCamera(mouse, camera);
         const hits = raycaster.intersectObjects(scene.children, true);
 
-
-        trainActive = hits.some(h => {
+        const isTrainHit = hits.some(h => {
             let o = h.object;
             while (o) { if (o === miniTrain) return true; o = o.parent; }
             return false;
         });
 
-        renderer.domElement.style.cursor = trainActive ? 'move' : 'default';
+        setTrainActive(isTrainHit);
+        renderer.domElement.style.cursor = isTrainHit ? 'move' : 'default';
     });
 }

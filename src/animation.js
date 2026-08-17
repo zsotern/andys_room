@@ -1,7 +1,10 @@
 import * as THREE from "three";
 
 import {camera, clock, controls, renderer, scene} from "./scene.js";
+import { applyDayNight, dayMode, lampLight } from "./lights.js";
 import {ceilingFan} from "./furniture/accessories.js";
+import {resetCamera, toast, toggleInfo} from "./ui.js";
+import {checkCollision, miniTrain} from "./furniture/train.js";
 
 export let lastT = 0; // dt
 
@@ -11,6 +14,13 @@ export let ceilingPoint;
 export const keys = { ArrowUp:false, ArrowDown:false, ArrowLeft:false, ArrowRight:false };
 
 export let trainActive = false; // kijelölés
+
+export function setTrainActive(v) {
+    trainActive = v;
+}
+
+const moveSpeed = 2.0;
+const turnSpeed = Math.PI;
 
 export function animate() {
     requestAnimationFrame(animate);
